@@ -18,7 +18,7 @@ app.logger.addHandler(stream_handler)
 
 CORS(app) 
 
-@app.route("/process_files", methods=['POST'])
+@app.route("/api/process_files", methods=['POST'])
 def process_files():
 
     name_index = request.form['name_index']
